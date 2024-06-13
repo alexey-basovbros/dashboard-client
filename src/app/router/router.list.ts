@@ -1,7 +1,7 @@
 enum RouterList {
   // Public routes
-  SIGNIN = "signin",
-  SIGNUP = "signup",
+  SIGNIN = "sign-in",
+  SIGNUP = "sign-up",
   RESET_PASSWORD = "reset-password",
   RESTORE_PASSWORD = "restore-password",
   // Private routes

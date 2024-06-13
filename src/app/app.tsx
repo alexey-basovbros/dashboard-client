@@ -1,10 +1,10 @@
-import { FC, ReactNode } from "react";
+import { FC, ReactNode, PropsWithChildren } from "react";
 
-interface Props {};
+interface Props extends PropsWithChildren {};
 
-const App: FC<Props> = (): ReactNode => {
+const App: FC<Props> = ({ children }): ReactNode => {
   return <div className="app-wrapper">
-    App
+    { children }
   </div>
 };
 
