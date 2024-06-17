@@ -6,7 +6,9 @@ enum RouterList {
   RESTORE_PASSWORD = "restore-password",
   // Private routes
   LOBBY = "",
-  SETTINGS = "settings"
+  SETTINGS = "settings",
+  // Errors
+  ERROR = "/error"
 };
 
 export {
