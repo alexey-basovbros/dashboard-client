@@ -32,8 +32,9 @@
       "@shared-ui": ["src/shared/ui/index"],
       "@shared-model": ["src/shared/model/index"],
       "@shared-lib": ["src/shared/lib/index"],
+      "@test": ["src/test/index"]
     },
   },
-  "include": ["src"],
+  "include": ["src", "@testing-library/jest-dom"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }
