@@ -8,7 +8,7 @@ enum RouterList {
   LOBBY = "",
   SETTINGS = "settings",
   // Errors
-  ERROR = "/error"
+  ERROR = "error"
 };
 
 export {
