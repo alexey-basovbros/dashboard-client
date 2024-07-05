@@ -1,9 +1,9 @@
-import { Layout, LayoutProps } from "./layout";
+import { PrivateLayout, PrivateLayoutProps } from "./layout";
 
 export {
-  Layout as PrivateLayout
+  PrivateLayout
 };
 
 export type {
-  LayoutProps as PrivateLayoutProps
+  PrivateLayoutProps
 };

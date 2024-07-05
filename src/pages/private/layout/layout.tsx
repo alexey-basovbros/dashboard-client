@@ -1,19 +1,28 @@
-import { FC, ReactNode } from "react";
+import { FC, ReactElement } from "react";
+import { Layout } from "antd";
 
-interface LayoutProps {
-  content: ReactNode
+interface PrivateLayoutProps {
+  navbar?: ReactElement;
+  content: ReactElement;
+  sidebar?: ReactElement;
+  footer?: ReactElement;
 };
 
-const Layout: FC<LayoutProps> = ({ content }): ReactNode => {
-  return <div className="layout private">
-    {content}
-  </div>
+const PrivateLayout: FC<PrivateLayoutProps> = ({ navbar, content, sidebar, footer }): ReactElement => {
+  return <Layout style={{ minHeight: "100vh" }}>
+    { sidebar }
+    <Layout>
+      { navbar }
+      { content }
+      { footer }
+    </Layout>
+  </Layout>
 };
 
 export {
-  Layout
+  PrivateLayout
 };
 
 export type {
-  LayoutProps
+  PrivateLayoutProps
 };
