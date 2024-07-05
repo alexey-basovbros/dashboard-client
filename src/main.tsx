@@ -14,9 +14,7 @@ import "@assets/scss/style.scss";
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
     <App>
-      <ConfigProvider theme={{
-        algorithm: theme.darkAlgorithm
-      }}>
+      <ConfigProvider>
         <StoreProvider store={Store}>
           <RouterProvider router={Router} />
         </StoreProvider>
