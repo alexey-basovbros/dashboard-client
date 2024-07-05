@@ -1,4 +1,7 @@
 import { FC, ReactElement, PropsWithChildren } from "react";
+import { Layout } from "antd";
+
+const { Content } = Layout;
 
 interface PageProps extends PropsWithChildren {
   className?: string;
@@ -10,9 +13,11 @@ const Page: FC<PageProps> = ({ className, children }): ReactElement => {
     className ? className : ""
   ].join(" ");
 
-  return <div data-testid="page-wrapper" className={classNames}>
-    { children }
-  </div>
+  return <Content>
+    <div data-testid="page-wrapper" className={classNames}>
+      { children }
+    </div>
+  </Content> 
 };
 
 export {
