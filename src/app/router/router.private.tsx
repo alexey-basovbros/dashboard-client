@@ -3,9 +3,16 @@ import { RouterList } from "@app-router";
 
 import { PrivateLayout, LobbyPage, SettingsPage, PrivateErrorPage } from "@pages";
 
+import { Sidebar, PrivateNavbar, Footer } from "@features";
+
 const privateRoutes: RouteObject[] = [
   {
-    element: <PrivateLayout content={<Outlet />} />,
+    element: <PrivateLayout
+      sidebar={<Sidebar />}
+      navbar={<PrivateNavbar />}
+      content={<Outlet />}
+      footer={<Footer />}
+    />,
     children: [
       {
         path: RouterList.LOBBY,
