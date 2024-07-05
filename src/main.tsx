@@ -7,9 +7,7 @@ import { App } from '@app';
 import { Router } from "@app-router";
 import { Store } from "@app-store";
 
-import "bootstrap/dist/css/bootstrap.min.css";
 import "@assets/scss/style.scss";
-import "@assets/scss/custom.scss";
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
